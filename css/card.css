@@ -1,64 +1,97 @@
-div.card {
-    margin:5px;
-    width: 215px;
-    height: 300px;
-    background-color:#ffcc00;
-    border-radius: 15px;
-    padding-top:10px;
-    float:right;
+.round {
+  //border-radius: 15px;
 }
-
-.card .inner {
-    width: 185px;
-    height: 280px;
-    margin:0 auto;
-    background-color:#ccc;
-    border-radius: 15px;
-}
-
-.card .picture {
-    margin:0 auto;
-    padding-top:10px;
-    width:185px;
-    text-align:center;
-}
-.card .picture img {
-    width:150px;
-    height:100px;
-    }
-    
-.card h1 {
-    margin: 0 auto;
-    width:185px;
-    text-align:center;
-    font-size:1.5em;
-}
-
-.card .properties {
-    width:185px;
-    font-size:0.6em;
-    }
-    
-.card tr td {
-    border-bottom:1px solid #000;
-    }
-
-.card tr:last-child td {
-    border-bottom:none;
-    }
-    
-.card tr.last td {
-    border-bottom:none;
-    }
-    
-.card td.name {
-    text-align:left;
-    }
-.card td.value {
-    text-align:right;
-    }
-
 
 .card {
-    page-break-before: always;
+    margin:1px;
+    padding:5mm;
+    width: 57.15mm;
+    height: 88.9mm;
+    float:left;
+}
+
+.cor-Verde {
+  background-color:#24A63F;
+  color:#24A63F;
+}
+
+.cor-Amarela {
+  background-color:#F5CB39;
+  color:#F5CB39;
+}
+
+.cor-Azul {
+  background-color:#0F6A97;
+  color:#0F6A97;
+}
+
+.cor-Vermelho {
+  background-color:#CB3324;
+  color:#CB3324;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background-color:#FFFFFF;
+    text-align:center;
+}
+
+.top {
+  height:25mm;
+}
+.middle {
+  height:25mm;
+}
+
+.bottom {
+  .height:20mm;
+}
+.nome {
+    font-size:1.2em;
+    font-weight: bold;
+    padding: 3mm;
+}
+
+.sub {
+  font-size:1.2em;
+}
+
+.Triagem:before{
+    content: '';
+    background:url('../imgs/icons/005-stethoscope.svg');
+    background-size:cover;
+        position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+}
+
+.costs {
+  padding-top:10mm;
+  font-size:2em;
+}
+
+.obs {
+  font-size:0.8em;
+  padding:5mm;
+  text-align: left;
+}
+
+.box {
+  margin:20mm auto;
+  color:#FFFFFF !important;
+  width:40mm;
+  height:1.5cm;
+  border-radius: 5px;
+  display:table;
+}
+
+.box span {
+  display:table-cell;
+  vertical-align: middle;
+}
+.card {
+    page-break-inside: avoid;
 }

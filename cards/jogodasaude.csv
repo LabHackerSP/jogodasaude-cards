@@ -1,0 +1,32 @@
+nome,sub,qtd,cor,box,mortalidade,tratamento,custo,obs
+Saudavel,Triagem,4,Verde,Baixa Complexidade,0,0,,
+Dor de cabeça,Triagem,4,Verde,Baixa Complexidade,0,1,,
+Febre,Triagem,4,Verde,Baixa Complexidade,0,0,,Saque uma carta avançada.
+Dengue,Triagem,1,Verde,Baixa Complexidade,3,1,,"Contagiosa. Após a primeira rodada, caso não tenha sido tratada - um novo paciente entra em jogo. Caso tenha campanha de vacinação - essa carta perde o efeito."
+Febre Amarela,Triagem,1,Verde,Baixa Complexidade,3,1,,"Contagiosa. Após a primeira rodada, caso não tenha sido tratada - um novo paciente entra em jogo. Caso tenha campanha de vacinação - essa carta perde o efeito."
+Úlcera,Endoscopia Digestiva Alta,2,Amarela,Média Complexidade,3,3,,
+Encefalite,Eletroencefalograma,2,Amarela,Média Complexidade,3,2,,
+Refluxo Gastroesofágico,Laringoscopia,2,Amarela,Média Complexidade,3,1,,
+Sopro,Ecocardiograma,2,Amarela,Média Complexidade,1,3,,Procedimento opcional.
+Glaucoma,Campimetria,2,Amarela,Média Complexidade,1,2,,
+Infarto do Miocardio,Holter,2,Amarela,Média Complexidade,1,1,,
+Úlcera péptica,Cirurgia,2,Amarela,Alta Complexidade,3,3,,
+Insuficiência Renal,Transplante,2,Amarela,Alta Complexidade,3,2,,
+Cancer de Mama,Ressonância Nuclear Magnética,2,Amarela,Alta Complexidade,3,1,,Procedimento opcional.
+Cálculo Renal,Cirurgia,2,Amarela,Alta Complexidade,1,3,,
+Insuficiência cardiaca,Transplante,2,Amarela,Alta Complexidade,1,2,,
+Cancer de Prostata,Ressonância Nuclear Magnética,2,Amarela,Alta Complexidade,1,1,,Procedimento opcional.
+Sobreexame,Sobreexame,2,Amarela,Média Complexidade,0,2,,"Caso tenha ""Educação para Saúde"" descarte essa carta e pegue 1 token de saúde."
+Sobreexame,Sobreexame,2,Amarela,Alta Complexidade,0,2,,"Caso tenha ""Educação para Saúde"" descarte essa carta e pegue 1 token de saúde."
+Parto,Parto,1,Amarela,Média Complexidade,0,1,,"Caso tenha ""Parto Humanizado"" pode ser tratado como Baixa Complexidade complexidade."
+Hormonioterapia Trans,Hormonioterapia Trans,1,Amarela,Média Complexidade,0,1,,Procedimento opcional.
+Evento,Epidemia,1,Vermelho,,,,,Procure uma cara contagiosa no baralho e coloque na mesa do jogador com mais dinheiro. Ignore essa carta caso os jogadores tenham investido em *Campanha de Vacinação*
+Evento,Contenção de verbas federais,1,Vermelho,,,,,Durante esse turno os jogadores recebem apenas metade da verba. No próximo turno eles vão receber o atrasado.
+Evento,Privatização,1,Vermelho,,,,,Cada jogador tem que escolher um equipamento para privatizar. Recebe metade do custo inicial do equipamento.
+Evento,Judicialização,1,Vermelho,,,,,Caso o jogador tenha algum paciente com um procedimento não coberto ele precisa pagar iMédia Complexidadetamente 1/n do custo do procedimento.
+Tecnologia,Educação para Saude,1,Azul,,,,$1,
+Tecnologia,Parto Humanizado,1,Azul,,,,$1,
+Tecnologia,Hormonioterapia Trans,1,Azul,,,,$2,
+Tecnologia,Ecocardiograma,1,Azul,,,,$2,
+Tecnologia,Ressonância Nuclear Magnética,1,Azul,,,,$3,
+Tecnologia,Campanha de Vacinação,1,Azul,,,,$1,
