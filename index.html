@@ -12,7 +12,7 @@
 
 
         <script id="card" type="text/html">
-            <div class="card round cor-{{cor}}">
+            <div class="card cor-{{cor}}">
                 <div class="inner round">
                   <div class="top">
                       <div class="nome">{{nome}}</div>
@@ -20,7 +20,10 @@
                   </div>
                   <div class="middle">
                     {{#tratamento}}
-                    <div class="costs">{{tratamento}}/{{mortalidade}}</div>
+                    <div class="costs">
+                      <span class="tratamento">{{tratamento}}</span>
+                      <hr class="bar cor-{{cor}}"/>
+                      <span class="mortalidade">{{mortalidade}}</span></div>
                     {{/tratamento}}
                     {{#custo}}
                     <div class="costs">{{custo}}</div>

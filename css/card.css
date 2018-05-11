@@ -1,5 +1,5 @@
 .round {
-  //border-radius: 15px;
+  border-radius: 15px;
 }
 
 .card {
@@ -10,22 +10,22 @@
     float:left;
 }
 
-.cor-Verde {
+.cor-Verde,.cor-Verde .tratamento:before, .Triagem:before {
   background-color:#24A63F;
   color:#24A63F;
 }
 
-.cor-Amarela {
+.cor-Amarela, .cor-Amarela .tratamento:before {
   background-color:#F5CB39;
   color:#F5CB39;
 }
 
-.cor-Azul {
+.cor-Azul, .cor-Azul .tratamento:before {
   background-color:#0F6A97;
   color:#0F6A97;
 }
 
-.cor-Vermelho {
+.cor-Vermelho, .mortalidade:before {
   background-color:#CB3324;
   color:#CB3324;
 }
@@ -60,17 +60,46 @@
 
 .Triagem:before{
     content: '';
-    background:url('../imgs/icons/005-stethoscope.svg');
+    mask:url('../imgs/icons/005-stethoscope.svg');
     background-size:cover;
-        position:absolute;
+    position:absolute;
     width:20px;
     height:20px;
     margin-left:-20px;
 }
 
+.tratamento:before{
+    content: '';
+    mask:url('../imgs/icons/003-pills.svg');
+    background-size:cover;
+        position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+    margin-top:8px;
+}
+
+.mortalidade:before{
+    content: '';
+    mask: url('../imgs/icons/001-christian-grave.svg');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+    margin-top:8px;
+}
+
 .costs {
   padding-top:10mm;
   font-size:2em;
+}
+
+.bar {
+  width:20mm;
+  padding:0mm;
+  margin-top:0mm;
+  margin-bottom:0mm;
 }
 
 .obs {
