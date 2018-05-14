@@ -1,3 +1,11 @@
+
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+
 .round {
   border-radius: 15px;
 }
@@ -8,38 +16,42 @@
     width: 57.15mm;
     height: 88.9mm;
     float:left;
+    font-family: "Open Sans";
 }
 
-.cor-Cinza, .cor-Cinza .paciente:before, .cor-Cinza .custo:before {
-  background-color:#999;
-  color:#999;
-}
+/* Cores de cartas */
 
-.cor-Roxo, .cor-Roxo .custo:before {
-  background-color:#572A41;
-  color:#572A41;
-}
-
-.cor-Verde,.cor-Verde .tratamento:before, .Triagem:before {
+.basica {
   background-color:#24A63F;
   color:#24A63F;
 }
 
-.cor-Amarela, .cor-Amarela .tratamento:before {
+.avancada {
   background-color:#F5CB39;
   color:#F5CB39;
 }
 
-.cor-Azul, .cor-Azul .tratamento:before, .cor-Azul .costs:before {
+.tecnologia {
   background-color:#0F6A97;
   color:#0F6A97;
 }
 
-.cor-Vermelho, .mortalidade:before {
+.cidade {
+  background-color:#999;
+  color:#999;
+}
+
+.equipamento {
+  background-color:#572A41;
+  color:#572A41;
+}
+
+.evento {
   background-color:#CB3324;
   color:#CB3324;
 }
 
+/* Tamanhos */
 .inner {
     width: 100%;
     height: 100%;
@@ -58,6 +70,9 @@
 .bottom {
   .height:15mm;
 }
+
+
+/* Fontes */
 .nome {
     font-size:1.2em;
     font-weight: bold;
@@ -68,9 +83,18 @@
   font-size:1.2em;
 }
 
-.Triagem:before{
+
+.slash {
+  padding-top:10mm;
+  font-size:2em;
+}
+
+
+/* Icones */
+
+.basica .Triagem:before{
     content: '';
-    mask:url('../imgs/icons/005-stethoscope.svg');
+    background-image: url('../imgs/icons/005-stethoscope.svg');
     background-size:cover;
     position:absolute;
     width:20px;
@@ -78,54 +102,72 @@
     margin-left:-20px;
 }
 
-.paciente:before{
+.cidade .info_a:before{
     content: '';
-    mask:url('../imgs/icons/007-avatar.svg');
+     background-image: url('../imgs/icons/007-avatar.svg');
     background-size:cover;
     position:absolute;
     width:20px;
     height:20px;
     margin-left:-30px;
-    margin-top:8px;
+    margin-top:10px;
 }
 
 
-.tratamento:before{
+.basica .info_a:before {
     content: '';
-    mask:url('../imgs/icons/003-pills.svg');
+    background-image:url('../imgs/icons/003-pills.svg');
     background-size:cover;
         position:absolute;
     width:20px;
     height:20px;
     margin-left:-30px;
-    margin-top:8px;
+    margin-top:10px;
 }
 
-.mortalidade:before{
+.avancada .info_a:before {
     content: '';
-    mask: url('../imgs/icons/001-christian-grave.svg');
+    background-image: url('../imgs/icons/003-pills.svg');
+    background-size:cover;
+        position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+    margin-top:10px;
+}
+
+.basica .info_b:before, .avancada .info_b:before{
+    content: '';
+    background-image: url('../imgs/icons/001-christian-grave.svg');
     background-size:cover;
     position:absolute;
     width:20px;
     height:20px;
     margin-left:-30px;
-    margin-top:8px;
+    margin-top:10px;
 }
 
-.costs {
-  padding-top:10mm;
-  font-size:2em;
-}
 
-.costs:before, .custo:before {
+.cidade .info_b:before, .tecnologia .info_a:before {
   content: '';
-  mask: url('../imgs/icons/008-money.svg');
+  background-image: url('../imgs/icons/008-money.svg');
   background-size:cover;
   position:absolute;
   width:20px;
   height:20px;
   margin-left:-30px;
-  margin-top:8px;
+  margin-top:10px;
+}
+
+.equipamento .info_a:before, .equipamento .info_b:before {
+  content: '';
+  background-image: url('../imgs/icons/008-money.svg');
+  background-size:cover;
+  position:absolute;
+  width:20px;
+  height:20px;
+  margin-left:-30px;
+  margin-top:10px;
 }
 
 .bar {

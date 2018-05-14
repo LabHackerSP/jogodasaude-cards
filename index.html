@@ -6,48 +6,30 @@
         <script language="javascript" type="text/javascript" src="./vendor/ICanHaz.min.js"></script>
         <script language="javascript" type="text/javascript" src="./vendor/jquery.csv-0.7.js"></script>
         <script language="javascript" type="text/javascript" src="./js/main.js"></script>
-
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
         <link rel="stylesheet" type="text/css" href="./css/main.css" />
         <link rel="stylesheet" type="text/css" href="./css/card.css" />
 
 
         <script id="card" type="text/html">
-            <div class="card cor-{{cor}}">
+            <div class="card {{tipo}}">
                 <div class="inner round">
                   <div class="top">
                       <div class="nome">{{nome}}</div>
                       <div class="sub {{sub}}">{{sub}}</div>
                   </div>
                   <div class="middle">
-
-                    <!-- Doenças -->
-                    {{#tratamento}}
-                    <div class="costs">
-                      <span class="tratamento">{{tratamento}}</span>
-                      <hr class="bar cor-{{cor}}"/>
-                      <span class="mortalidade">{{mortalidade}}</span>
+                    <div class="slash">
+                      <span class="info_a">{{info_a}}</span>
+                      {{#info_b}}
+                      <hr class="bar">
+                      <span class="info_b">{{info_b}}</span>
+                      {{/info_b}}
                     </div>
-                    {{/tratamento}}
-
-                    <!-- Tecnologias -->
-                    {{#custo}}
-                    {{^paciente}}
-                    <div class="costs">{{custo}}</div>
-                    {{/paciente}}
-                    {{/custo}}
-
-                    <!-- Cidades -->
-                    {{#paciente}}
-                    <div class="costs">
-                      <span class="paciente">{{paciente}}</span>
-                      <hr class="bar cor-{{cor}}"/>
-                      <span class="custo">{{custo}}</span></div>
-                    {{/paciente}}
-
                     <div class="obs">{{obs}}</div>
                   </div>
                   <div class="bottom">
-                    <div class="box cor-{{cor}}"><span>{{box}}</span></div>
+                    <div class="box {{tipo}}"><span>{{box}}</span></div>
                     {{/box}}
                   </div>
                 </div>
