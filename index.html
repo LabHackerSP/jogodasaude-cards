@@ -25,9 +25,18 @@
                       <hr class="bar cor-{{cor}}"/>
                       <span class="mortalidade">{{mortalidade}}</span></div>
                     {{/tratamento}}
+
                     {{#custo}}
                     <div class="costs">{{custo}}</div>
                     {{/custo}}
+
+                    {{#paciente}}
+                    <div class="costs">
+                      <span class="paciente">{{paciente}}</span>
+                      <hr class="bar cor-{{cor}}"/>
+                      <span class="custo">{{custo}}</span></div>
+                    {{/paciente}}
+
                     <div class="obs">{{obs}}</div>
                   </div>
                   <div class="bottom">

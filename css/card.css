@@ -10,6 +10,10 @@
     float:left;
 }
 
+.cor-Cinza {
+  background-color:#999;
+  color:#999;
+}
 .cor-Verde,.cor-Verde .tratamento:before, .Triagem:before {
   background-color:#24A63F;
   color:#24A63F;
