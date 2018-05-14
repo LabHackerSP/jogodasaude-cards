@@ -19,19 +19,24 @@
                       <div class="sub {{sub}}">{{sub}}</div>
                   </div>
                   <div class="middle">
+
+                    <!-- Doenças -->
                     {{#tratamento}}
                     <div class="costs">
                       <span class="tratamento">{{tratamento}}</span>
                       <hr class="bar cor-{{cor}}"/>
-                      <span class="mortalidade">{{mortalidade}}</span></div>
+                      <span class="mortalidade">{{mortalidade}}</span>
+                    </div>
                     {{/tratamento}}
 
+                    <!-- Tecnologias -->
                     {{#custo}}
                     {{^paciente}}
                     <div class="costs">{{custo}}</div>
                     {{/paciente}}
                     {{/custo}}
 
+                    <!-- Cidades -->
                     {{#paciente}}
                     <div class="costs">
                       <span class="paciente">{{paciente}}</span>
