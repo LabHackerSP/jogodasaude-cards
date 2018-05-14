@@ -42,3 +42,31 @@ Após a reunião dos municipios o primeiro jogador saca uma carta de evento e l�
 9. Cada equipamento desligado gera 1 token de insatisfação. Equipamentos desligado por falta de pagamento acumulam a divida do custo de manutenção.
 10. Jogador pode comprar novos equipamentos pagando seu custo de implementação. Os equipamentos passam a funcionar no inicio do próximo turno.
 11. Jogador pode escolher desabilitar equipamentos por falta de verbas. Equipamentos desligados voluntariamente param de consumir recursos.
+
+
+## Cartas e efeitos
+
+
+### Contagiosa
+
+Uma carta de doença contagiosa vai se espalhando pela população caso não seja tratada a tempo.
+Quando diagnosticar (virar pra cima) uma carta contagiosa, verifique quantos tokens de insatisfação ela tem.
+Quando ela tiver alcançado mais de 50% de insatisfação (arredondado pra cima) coloque uma outra carta com a mesma doença em jogo.
+A carta deixa de ser contagiosa no momento em que começar a ser tratada.
+
+Caso a tecnologia "Campanha de Vacinação" esteja em jogo as cartas contagiosas se comportam como cartas normais.
+
+
+## Sobreexame
+
+Sobreexame é um problema comum no nosso sistema de saúde, em parte por falta de educação para saúde os pacientes muitas vezes **querem** um exame para confirmar que não estão doentes. Por outro lado, médicos com pouca formação também requisitam exames de maneira exagerada.
+
+Então caso você tenha um caso de sobreexame será obrigado a analisar o caso mesmo assim - ou vai ficar juntando tokens de insatisfação.
+
+Caso tenha a tecnologia "Educação para saúde" essa carta pode ser descartada imediatamente.
+
+## Parto Humanizado
+
+O Brasil é recordista mundial de cesarianas - tornando um processo natural e humano em uma questão cirurgica. Assim boa parte dos partos torna-se um caso de média complexidade, sendo necessário hospital, anestesistas, etc
+
+Caso tenha a tecnologia "Parto Humanizado" o parto passa a ser tratado como uma questão de baixa complexidade.
