@@ -1,32 +1,39 @@
-nome,sub,qtd,cor,box,mortalidade,tratamento,custo,obs
-Saudavel,Triagem,4,Verde,Baixa Complexidade,0,0,,
-Dor de cabeça,Triagem,4,Verde,Baixa Complexidade,0,1,,
-Febre,Triagem,4,Verde,Baixa Complexidade,0,0,,Saque uma carta avançada.
-Dengue,Triagem,1,Verde,Baixa Complexidade,3,1,,"Contagiosa. Após a primeira rodada, caso não tenha sido tratada - um novo paciente entra em jogo. Caso tenha campanha de vacinação - essa carta perde o efeito."
-Febre Amarela,Triagem,1,Verde,Baixa Complexidade,3,1,,"Contagiosa. Após a primeira rodada, caso não tenha sido tratada - um novo paciente entra em jogo. Caso tenha campanha de vacinação - essa carta perde o efeito."
-Úlcera,Endoscopia Digestiva Alta,2,Amarela,Média Complexidade,3,3,,
-Encefalite,Eletroencefalograma,2,Amarela,Média Complexidade,3,2,,
-Refluxo Gastroesofágico,Laringoscopia,2,Amarela,Média Complexidade,3,1,,
-Sopro,Ecocardiograma,2,Amarela,Média Complexidade,1,3,,Procedimento opcional.
-Glaucoma,Campimetria,2,Amarela,Média Complexidade,1,2,,
-Infarto do Miocardio,Holter,2,Amarela,Média Complexidade,1,1,,
-Úlcera péptica,Cirurgia,2,Amarela,Alta Complexidade,3,3,,
-Insuficiência Renal,Transplante,2,Amarela,Alta Complexidade,3,2,,
-Cancer de Mama,Ressonância Nuclear Magnética,2,Amarela,Alta Complexidade,3,1,,Procedimento opcional.
-Cálculo Renal,Cirurgia,2,Amarela,Alta Complexidade,1,3,,
-Insuficiência cardiaca,Transplante,2,Amarela,Alta Complexidade,1,2,,
-Cancer de Prostata,Ressonância Nuclear Magnética,2,Amarela,Alta Complexidade,1,1,,Procedimento opcional.
-Sobreexame,Sobreexame,2,Amarela,Média Complexidade,0,2,,"Caso tenha ""Educação para Saúde"" descarte essa carta e pegue 1 token de saúde."
-Sobreexame,Sobreexame,2,Amarela,Alta Complexidade,0,2,,"Caso tenha ""Educação para Saúde"" descarte essa carta e pegue 1 token de saúde."
-Parto,Parto,1,Amarela,Média Complexidade,0,1,,"Caso tenha ""Parto Humanizado"" pode ser tratado como Baixa Complexidade complexidade."
-Hormonioterapia Trans,Hormonioterapia Trans,1,Amarela,Média Complexidade,0,1,,Procedimento opcional.
-Evento,Epidemia,1,Vermelho,,,,,Procure uma cara contagiosa no baralho e coloque na mesa do jogador com mais dinheiro. Ignore essa carta caso os jogadores tenham investido em *Campanha de Vacinação*
-Evento,Contenção de verbas federais,1,Vermelho,,,,,Durante esse turno os jogadores recebem apenas metade da verba. No próximo turno eles vão receber o atrasado.
-Evento,Privatização,1,Vermelho,,,,,Cada jogador tem que escolher um equipamento para privatizar. Recebe metade do custo inicial do equipamento.
-Evento,Judicialização,1,Vermelho,,,,,Caso o jogador tenha algum paciente com um procedimento não coberto ele precisa pagar iMédia Complexidadetamente 1/n do custo do procedimento.
-Tecnologia,Educação para Saude,1,Azul,,,,$1,
-Tecnologia,Parto Humanizado,1,Azul,,,,$1,
-Tecnologia,Hormonioterapia Trans,1,Azul,,,,$2,
-Tecnologia,Ecocardiograma,1,Azul,,,,$2,
-Tecnologia,Ressonância Nuclear Magnética,1,Azul,,,,$3,
-Tecnologia,Campanha de Vacinação,1,Azul,,,,$1,
+nome,sub,qtd,cor,tipo,box,info_a,info_b,obs
+Saudavel,Triagem,6,Verde,basica,Baixa Complexidade,0,0,
+Dor de cabeça,Triagem,4,Verde,basica,Baixa Complexidade,1,0,
+Diagnóstico,Triagem,6,Verde,basica,Baixa Complexidade,?,?,Saque uma carta avançada.
+Dengue,Triagem,1,Verde,basica,Baixa Complexidade,1,3,Contagiosa.
+Febre Amarela,Triagem,1,Verde,basica,Baixa Complexidade,1,3,Contagiosa.
+Úlcera,Endoscopia Digestiva Alta,3,Amarela,avancada,Media Complexidade,3,3,
+Encefalite,Eletroencefalograma,3,Amarela,avancada,Media Complexidade,2,3,
+Refluxo Gastroesofágico,Laringoscopia,3,Amarela,avancada,Media Complexidade,1,3,
+Sopro,Ecocardiograma,3,Amarela,avancada,Media Complexidade,3,1,Procedimento opcional.
+Glaucoma,Campimetria,3,Amarela,avancada,Media Complexidade,2,1,
+Infarto do Miocardio,Holter,3,Amarela,avancada,Media Complexidade,1,1,
+Úlcera péptica,Cirurgia,3,Amarela,avancada,Alta Complexidade,3,3,
+Insuficiência Renal,Transplante,3,Amarela,avancada,Alta Complexidade,2,3,
+Cancer de Mama,Ressonância Nuclear Magnética,3,Amarela,avancada,Alta Complexidade,1,3,Procedimento opcional.
+Cálculo Renal,Cirurgia,3,Amarela,avancada,Alta Complexidade,3,1,
+Insuficiência cardiaca,Transplante,3,Amarela,avancada,Alta Complexidade,2,1,
+Cancer de Prostata,Ressonância Nuclear Magnética,3,Amarela,avancada,Alta Complexidade,1,1,Procedimento opcional.
+Sobreexame,Sobreexame,3,Amarela,avancada,Media Complexidade,2,0,"C/ ""Educação para Saúde"" descarte e pegue 1 saúde."
+Sobreexame,Sobreexame,3,Amarela,avancada,Alta Complexidade,2,0,"C/ ""Educação para Saúde"" descarte e pegue 1 saúde."
+Parto,Parto,1,Amarela,avancada,Media Complexidade,1,0,"c/ ""Parto Humanizado"" trate como Baixa complexidade."
+Hormonioterapia Trans,Hormonioterapia Trans,1,Amarela,avancada,Media Complexidade,1,0,Procedimento opcional.
+Evento,Epidemia,1,Vermelho,evento,,,,Procure uma carta contagiosa no baralho e coloque na mesa do jogador com mais dinheiro. Ignore essa carta caso os jogadores tenham investido em *Campanha de Vacinação*
+Evento,Contenção de verbas federais,1,Vermelho,evento,,,,Durante esse turno os jogadores recebem apenas metade da verba. No próximo turno eles vão receber o atrasado.
+Evento,Privatização,1,Vermelho,evento,,,,Cada jogador tem que escolher um equipamento para privatizar. Recebe metade do custo inicial do equipamento.
+Evento,Judicialização,1,Vermelho,evento,,,,Caso o jogador tenha algum paciente com um procedimento não coberto ele precisa pagar imediatamente 1/n do custo do procedimento.
+Tecnologia,Educação para Saude,1,Azul,tecnologia,,1xN,,Multiplique o custo pelo número de jogadores.
+Tecnologia,Parto Humanizado,1,Azul,tecnologia,,1xN,,Multiplique o custo pelo número de jogadores.
+Tecnologia,Hormonioterapia Trans,1,Azul,tecnologia,,2xN,,Multiplique o custo pelo número de jogadores.
+Tecnologia,Ecocardiograma,1,Azul,tecnologia,,2xN,,Multiplique o custo pelo número de jogadores.
+Tecnologia,Ressonância Nuclear Magnética,1,Azul,tecnologia,,3xN,,Multiplique o custo pelo número de jogadores.
+Tecnologia,Campanha de Vacinação,1,Azul,tecnologia,,1xN,,Multiplique o custo pelo número de jogadores.
+Cidade A,Pequena,1,Cinza,cidade,"1 bx, 1 md",4,3,
+Cidade B,Pequena,1,Cinza,cidade,"1 bx, 1 md",4,3,
+Cidade C,Pequena,1,Cinza,cidade,"1 bx, 1 md",4,3,
+Cidade D,Grande,1,Cinza,cidade,"1 bx, 1 md",5,4,
+Postinho,,12,Roxo,equipamento,Baixa Complexidade,1,0.5,
+Hospital Simples,,6,Roxo,equipamento,Média Complexidade,2,1,
+Hospital Especializado,,6,Roxo,equipamento,Alta Complexidade,3,2,

@@ -7,7 +7,6 @@
         <script language="javascript" type="text/javascript" src="./vendor/jquery.csv-0.7.js"></script>
         <script language="javascript" type="text/javascript" src="./js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-        <link rel="stylesheet" type="text/css" href="./css/main.css" />
         <link rel="stylesheet" type="text/css" href="./css/card.css" />
 
 
@@ -32,6 +31,7 @@
                     <div class="box {{tipo}}"><span>{{box}}</span></div>
                     {{/box}}
                   </div>
+                  <div class="logo">Jogo da Saúde</div>
                 </div>
             </div>
         </script>
@@ -41,16 +41,29 @@
 
         // when the dom's ready
         $(document).ready(function () {
+          var cards_url = "/cards/jogodasaude.csv";
+
+          if (navigator.onLine) {
+            cards_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTSSlXb6REaNxzhFtY7CNSzEFJZ6qXaJM3tLiTGy0L8Z_aN8Cb3mmMTnxWK3h49G66sBkcvd2YdUfVE/pub?gid=0&single=true&output=csv";
+            $(".offline").hide();
+          }
+
 			    $.ajax({
 					type: "GET",
-					url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTSSlXb6REaNxzhFtY7CNSzEFJZ6qXaJM3tLiTGy0L8Z_aN8Cb3mmMTnxWK3h49G66sBkcvd2YdUfVE/pub?gid=0&single=true&output=csv",
+          url: cards_url,
 					dataType: "text",
 					success: function(data) {
 						drawcards($.csv.toObjects(data));
 						}
 				});
+
+        $("#toggle").click(function () {
+          $(".card").toggleClass("verso");
+        })
 			});
         </script>
+        <a class="noprint" id="toggle" href="#">verso</a>
+        <span class="noprint offline">offline</span>
         <div id="content"></div>
     </body>
 </html>

@@ -6,6 +6,28 @@
    }
 }
 
+@media print {
+  .noprint {
+    display:none;
+  }
+
+}
+.verso .top, .verso .middle, .verso .bottom {
+  display:none;
+}
+
+.logo {
+  display:none;
+  width:40mm;
+  font-size: 2em;
+  margin:0 auto;
+  padding-top:30mm;
+}
+
+.verso .logo {
+  display:block;
+}
+
 .round {
   border-radius: 15px;
 }
@@ -16,7 +38,7 @@
     width: 57.15mm;
     height: 88.9mm;
     float:left;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Verdana";
 }
 
 /* Cores de cartas */
